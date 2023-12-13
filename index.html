@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game of life, game of death</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <iframe src="https://elliott-romano.github.io/gameofdeath/" title="Game of Death"></iframe>
+    <iframe src="https://elliott-romano.github.io/allWatchedOver/" title="All Watched Over"></iframe>
+
+    <button class="info-button" onclick="openModal()">INFO</button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal()" style="cursor: pointer; float: right;">&times;</span>
+            <h3>INFO</h3>
+             <img src="https://lh3.googleusercontent.com/C6HkzTZOrAtlLPkY6tHcUQMX1BoahTG_Gt4ueO_G0dV-J6dqSbT7ElD6Ddg_vg2cNI1D9cIBQMUNaPWIkPrqGVpbE9RY_9Q3Fn0k" alt="Image" style="width: 25%;">
+            <p>The Game of Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970. It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves.
+            <br>
+            <br>
+            This iteration of Conway's game of life, maps text and sound to utlise the ruleset of the game as a compositional tool. As a means to create a sense of counterpoint in voice and tone, the game of life is paired with the game of death. One game generates sound when life occurs, the other generates sound when death occurs.
+            <br>
+            
+            </p>
+            <h6>-Elliott Romano, 2023</h6>
+
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('myModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
